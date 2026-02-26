@@ -177,7 +177,7 @@ iframe {
 #contact { text-align: center; padding-bottom: 100px; }
 .contact-card { background: var(--card-bg); color: var(--dark-bg); padding: 60px 40px; border-radius: 30px; }
 .contact-card p { color: white; }
-.contact-email { font-size: 1.8rem; font-weight: bold; color: var(--red); text-decoration: none; }
+.contact-email { font-size: 1.5rem; font-weight: bold; color: var(--red); text-decoration: none; }
 
 /* FOOTER */
 footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.6; font-size: 0.8rem; }
