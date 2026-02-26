@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Navigation | Gemstone Pitch 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">TERPS<span class="highlight">NAV</span></span>
+            </div>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#about">The Gap</a></li>
+                <li><a href="#team">Majors</a></li>
+                <li><a href="#pitch">PDF Pitch</a></li>
+                <li><a href="#contact" class="nav-btn">Join Me!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-tag">GEMS102 | Research Pitch</div>
+        <h1>Autonomous Navigation in <br><span class="highlight">Inclement Weather</span></h1>
+        <p class="hero-subtext">Solving the safety gap for urban robotics in fog, rain, and low-light environments.</p>
+        <div class="hero-buttons">
+            <a href="#about" class="btn">View Research Gap</a>
+            <a href="mailto:dyu12347@terpmail.umd.edu" class="btn btn-outline">Email Daniel</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="section-header">
+            <h2>The Research Gap</h2>
+            <p>Current sensors like cameras and lidar work well in ideal conditions, but fail in weather situations such as fog and rain.</p>
+        </div>
+        <img src="Images/Sensors in Weather Conditions.png" alt="LiDAR and camera in rain">
+        <div class="grid">
+            <div class="card">
+                <h3>The Challenge</h3>
+                <p>Weather conditions cause sensor data to become noisy with inaccurate readings. Research shows that removing "noisy" data causes to much data loss. Multisensor fusion has improved navigation in adverse weather conditions, but is not perfect. </p>
+            </div>
+            <div class="card">
+                <h3>Potential Approaches</h3>
+                <ol>
+                    <li>Prevent extreme data loss from denoising algorithms by combining it with multi-sensor fusion.</li>
+                    <li>Have comunication between multiple robots to share sensor data at longer ranges.</li>
+                </ol>
+            </div>
+            <div class="card">
+                <h3>Research</h3>
+                <ol>
+                    <li><a href="https://arxiv.org/abs/2602.04763" target="_blank"><strong>Dr. Pratap Tokekar</strong> (UMD) on data sharing between autonomous vehicles.</a></li>
+                    <li><a href="https://doi.org/10.3390/s25247436" target="_blank"><strong>Gupta, H., Lilienthal, A. J., & Andreasson, H.</strong> on denoising algorithms for autonomous vehicles.</a></li>
+                    <li><a href="https://arxiv.org/abs/2508.16408" target="_blank"><strong>Palladin, E., Dietze, R., Narayanan, P., Bijelic, M., & Heide, F.</strong> on sensor fusion for autonomous vehicles.</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="bg-alt">
+        <div class="section-header">
+            <h2>Interdisciplinary Needs</h2>
+            <p>This project requires diverse perspectives to solve complex technical and social problems.</p>
+            <p>Potential work in this project includes:</p>
+        </div>
+        <div class="grid">
+            <div class="team-box">
+                <h4>Computer Engineering / Computer Science</h4>
+                <p>Work on ROS (Robot Operating System), software, and computer hardware. Work on navigation algorithms and sensor fusion models. Work on machine learning and AI.</p>
+            </div>
+            <div class="team-box">
+                <h4>Engineering / Science</h4>
+                <p>Work on how signals are affected by rain and optimizing sensor hardware (Optics/Electrical Engineering).</p>
+                <p>Make sure the system is resilient to weather conditions.</p>
+            </div>
+            <div class="team-box">
+                <h4>Math / Statistics</h4>
+                <p>Work on mathematical models for data validation and analyzing system performance.</p>
+            </div>
+            <div class="team-box">
+                <h4>Social Sci / Policy</h4>
+                <p>Work with the community to ensure urban robots are designed for accessibility and community safety. Understand the impact of autonomous vehicles on the community.</p>
+            </div>
+        </div>
+        <div class="bio-card">
+            <h3>Project Proposer: Daniel Yu</h3>
+            <p>I am a Computer Engineering major with experience in autonomous navigation systems and software development. I have some experience with ROS and machine learning.</p>
+        </div>
+    </section>
+
+    <section id="pitch">
+        <h2>Full Research Pitch</h2>
+        <div class="pdf-container">
+            <iframe src="Files/GEMS Research Pitch.pdf" width="100%" height="600px"></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-card">
+            <h2>Ready to Build the Future?</h2>
+            <a href="mailto:dyu12347@terpmail.umd.edu" class="contact-email">dyu12347@terpmail.umd.edu</a>
+            <p>Join the GroupMe to meet others interested in this project and ask me questions!</p>
+            <a href="https://groupme.com/join_group/113502108/jmnjfRra" target="_blank" class="btn">Join the GroupMe</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Daniel Yu | Gemstone Honors Program | UMD</p>
+    </footer>
+
+</body>
+</html>
