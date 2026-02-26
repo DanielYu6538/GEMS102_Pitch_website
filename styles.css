@@ -28,9 +28,12 @@ body {
 }
 
 .nav-container {
-    width: 90%; max-width: 1200px;
+    width: 95%;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex; justify-content: space-between; align-items: center;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .logo-text { font-size: 1.6rem; font-weight: 800; color: white; }
@@ -41,6 +44,19 @@ body {
 .nav-links a:hover { color: var(--gold); }
 
 .nav-btn { background: var(--red); padding: 8px 18px; border-radius: 6px; }
+
+/* Logo in Navbar */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo-img {
+    height: 40px; /* Adjust size for the navbar */
+    width: auto;
+    padding-bottom: 0; /* Override the global img padding */
+}
 
 /* HERO */
 header {
@@ -60,12 +76,67 @@ h1 { font-size: clamp(2.2rem, 7vw, 4.2rem); line-height: 1.1; margin-bottom: 20p
 .btn-outline { background: transparent; border: 2px solid white; }
 .btn:hover { transform: translateY(-3px); opacity: 0.9; }
 
+/* Branding in Hero Section */
+.team-branding {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.hero-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.acronym-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.vertical-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #94a3b8;
+    border-right: 2px solid var(--gold);
+    padding-right: 15px;
+}
+
+.vertical-text strong {
+    color: var(--gold);
+}
+
+.vertical-text .gap {
+    margin-top: 10px; /* Space between the two phrases */
+}
+
+.team-name {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
 /* SECTIONS */
 section { padding: 80px 10%; }
 .bg-alt { background: rgba(255,255,255,0.02); }
 .section-header { margin-bottom: 50px; }
-img {padding-bottom: 40px;}
+img {
+    padding-bottom: 40px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
+
 
 /* GRID */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
@@ -88,7 +159,19 @@ h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
 .bio-card { margin-top: 50px; background: var(--red); color: white; padding: 40px; border-radius: 20px; }
 
 /* PDF */
-.pdf-container { background: white; border-radius: 15px; overflow: hidden; margin-top: 30px; }
+.pdf-container { 
+    width: 100%;
+    max-width: 100%;
+    background: white; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    margin-top: 30px;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+}
 
 /* CONTACT */
 #contact { text-align: center; padding-bottom: 100px; }
