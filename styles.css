@@ -196,13 +196,15 @@ h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
 .modal-content {
     position: relative;
     background-color: var(--dark-bg);
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 40px;
     border: 2px solid var(--gold);
-    width: 80%;
+    width: 90%;
     max-width: 600px;
+    max-height: 80vh;
     border-radius: 20px;
     text-align: center;
+    overflow-y: auto; 
 }
 
 .modal-content h3, .modal-content h4 {
@@ -212,6 +214,7 @@ h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
 
 .modal-content ul {
     list-style: none;
+    margin-bottom: 25px;
 }
 
 .modal-content li a {
@@ -228,7 +231,7 @@ h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
 }
 
 .nav-arrow {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     background: var(--red);
@@ -238,10 +241,11 @@ h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
     cursor: pointer;
     border-radius: 50%;
     font-size: 20px;
+    z-index: 2001;
 }
 
-.left-arrow { left: -60px; }
-.right-arrow { right: -60px; }
+.left-arrow { left: 20px; }
+.right-arrow { right: 20px; }
 
 .card h3, .team-box h4 { color: var(--gold); margin-bottom: 15px; }
 
@@ -312,8 +316,30 @@ footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,2
     
     section { padding: 60px 5%; }
 
-    .left-arrow { left: 10px; top: 90%; }
-    .right-arrow { right: 10px; top: 90%; }
+    .modal-content {
+        padding: 60px 20px 80px; /* Extra padding top/bottom for close and nav buttons */
+        width: 85%;
+    }
+
+    .nav-arrow {
+        top: auto;
+        bottom: 20px; /* Move arrows to the bottom on mobile */
+        transform: none;
+    }
+
+    .left-arrow { 
+        left: 20%; 
+    }
+
+    .right-arrow { 
+        right: 20%; 
+    }
+
+    .close-modal {
+        top: 15px;
+        right: 15px;
+        font-size: 35px; /* Larger hit target for fingers */
+    }
 
     .contact-email {
         font-size: 1.3rem;
