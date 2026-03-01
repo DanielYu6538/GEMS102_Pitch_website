@@ -161,7 +161,88 @@ h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--gold); }
     color: white;
 }
 
-.card:hover { border-color: var(--red); }
+#team a {
+    color: white;
+}
+
+.team-btn {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-btn:hover {
+    transform: scale(1.05); 
+    border-color: var(--gold);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--dark-bg);
+    margin: 10% auto;
+    padding: 40px;
+    border: 2px solid var(--gold);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modal-content h3, .modal-content h4 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.modal-content ul {
+    list-style: none;
+}
+
+.modal-content li a {
+    color: lightgray;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-main);
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--red);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.left-arrow { left: -60px; }
+.right-arrow { right: -60px; }
+
 .card h3, .team-box h4 { color: var(--gold); margin-bottom: 15px; }
 
 .bio-card { margin-top: 50px; background: var(--red); color: white; padding: 40px; border-radius: 20px; }
@@ -230,6 +311,9 @@ footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,2
     .nav-toggle-label span::after { content: ""; top: 8px; position: absolute; }
     
     section { padding: 60px 5%; }
+
+    .left-arrow { left: 10px; top: 90%; }
+    .right-arrow { right: 10px; top: 90%; }
 
     .contact-email {
         font-size: 1.3rem;

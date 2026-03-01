@@ -118,27 +118,39 @@
         <div class="section-header">
             <h2>Interdisciplinary Needs</h2>
             <p>This project requires diverse perspectives to solve complex technical and social problems.</p>
-            <p>Potential work in this project includes:</p>
+            <p>Click a box to learn more about each role and current research related to your major:</p>
         </div>
         <div class="grid">
-            <div class="team-box">
-                <h4>Computer Engineering / Computer Science</h4>
-                <p>Work on ROS (Robot Operating System), software, and computer hardware. Work on navigation algorithms and sensor fusion models. Work on machine learning and AI.</p>
-            </div>
-            <div class="team-box">
+            <button class="team-box team-btn" data-index="0">
+                <h4>Computer Engineering / CS</h4>
+                <p>Work on ROS, software, machine learning/AI, and autonomous algorithms.</p>
+            </button>
+            <button class="team-box team-btn" data-index="1">
                 <h4>Engineering / Science</h4>
-                <p>Work on how signals are affected by rain and optimizing sensor hardware (Optics/Electrical Engineering).</p>
-                <p>Make sure the system is resilient to weather conditions.</p>
-            </div>
-            <div class="team-box">
+                <p>Focus on signal processing, optics, electrical engineering, and hardware.</p>
+            </button>
+            <button class="team-box team-btn" data-index="2">
                 <h4>Math / Statistics</h4>
-                <p>Work on mathematical models for data validation and analyzing system performance.</p>
-            </div>
-            <div class="team-box">
+                <p>Develop models for data validation and performance analysis.</p>
+            </button>
+            <button class="team-box team-btn" data-index="3">
                 <h4>Social Sci / Policy</h4>
-                <p>Work with the community to ensure urban robots are designed for accessibility and community safety. Understand the impact of autonomous vehicles on the community.</p>
+                <p>Ensure community accessibility and safety constraints.</p>
+            </button>
+        </div>
+
+        <p><a href="https://ieeexplore.ieee.org/document/11205827" target="_blank">View more interdisciplinary needs here!</a></p>
+
+        <div id="team-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <button class="nav-arrow left-arrow">&#10094;</button>
+                <div id="modal-body">
+                </div>
+                <button class="nav-arrow right-arrow">&#10095;</button>
             </div>
         </div>
+
         <div class="bio-card">
             <h3>Project Proposer: Daniel Yu</h3>
             <p>I am a Computer Engineering major with experience in autonomous navigation systems and software development. I have some experience with ROS and machine learning.</p>
@@ -168,5 +180,6 @@
         <p>&copy; 2026 Daniel Yu | Gemstone Honors Program | UMD</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
