@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autonomous Navigation | Gemstone Pitch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -13,7 +15,7 @@
             <div class="logo">
                 <span class="logo-text">TERPS<span class="highlight">NAV</span></span>
             </div>
-            
+
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label">
                 <span></span>
@@ -61,20 +63,15 @@
         <div class="grid">
             <div class="card">
                 <h3>Watch a short video to learn more!</h3>
-                <iframe 
-                    width="95%"
-                    height="315"
-                    src="https://www.youtube.com/embed/IWCUQGYQMqg" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
+                <iframe width="95%" height="315" src="https://www.youtube.com/embed/IWCUQGYQMqg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
             <div class="card">
                 <h3>Voting Information</h3>
-                <p>Thanks for voting for my project! Unfortunatly, my pitch was not voted through</p>
+                <p>Thanks for voting for my project! Unfortunately, my pitch was not voted through</p>
                 <ul id="voting-info">
                 </ul>
             </div>
@@ -84,27 +81,35 @@
     <section id="about">
         <div class="section-header">
             <h2>The Research Gap</h2>
-            <p>Current sensors like cameras and lidar work well in ideal conditions, but fail in weather situations such as fog and rain.</p>
+            <p>Current sensors like cameras and lidar work well in ideal conditions, but fail in weather situations such
+                as fog and rain.</p>
         </div>
         <img src="Images/Sensors in Weather Conditions.png" alt="LiDAR and camera in rain">
         <div class="grid">
             <div class="card">
                 <h3>The Challenge</h3>
-                <p>Weather conditions cause sensor data to become noisy with inaccurate readings. Research shows that removing "noisy" data causes to much data loss. Multisensor fusion has improved navigation in adverse weather conditions, but is not perfect. </p>
+                <p>Weather conditions cause sensor data to become noisy with inaccurate readings. Research shows that
+                    removing "noisy" data causes to much data loss. Multisensor fusion has improved navigation in
+                    adverse weather conditions, but is not perfect. </p>
             </div>
             <div class="card">
                 <h3>Potential Approaches</h3>
                 <ol>
-                    <li>Prevent extreme data loss from denoising algorithms by combining it with multi-sensor fusion.</li>
+                    <li>Prevent extreme data loss from denoising algorithms by combining it with multi-sensor fusion.
+                    </li>
                     <li>Have comunication between multiple robots to share sensor data at longer ranges.</li>
                 </ol>
             </div>
             <div class="card">
                 <h3>Research</h3>
                 <ol>
-                    <li><a href="https://arxiv.org/abs/2602.04763" target="_blank"><strong>Dr. Pratap Tokekar</strong> (UMD) on data sharing between autonomous vehicles.</a></li>
-                    <li><a href="https://doi.org/10.3390/s25247436" target="_blank"><strong>Gupta, H., Lilienthal, A. J., & Andreasson, H.</strong> on denoising algorithms for autonomous vehicles.</a></li>
-                    <li><a href="https://arxiv.org/abs/2508.16408" target="_blank"><strong>Palladin, E., Dietze, R., Narayanan, P., Bijelic, M., & Heide, F.</strong> on sensor fusion for autonomous vehicles.</a></li>
+                    <li><a href="https://arxiv.org/abs/2602.04763" target="_blank"><strong>Dr. Pratap Tokekar</strong>
+                            (UMD) on data sharing between autonomous vehicles.</a></li>
+                    <li><a href="https://doi.org/10.3390/s25247436" target="_blank"><strong>Gupta, H., Lilienthal, A.
+                                J., & Andreasson, H.</strong> on denoising algorithms for autonomous vehicles.</a></li>
+                    <li><a href="https://arxiv.org/abs/2508.16408" target="_blank"><strong>Palladin, E., Dietze, R.,
+                                Narayanan, P., Bijelic, M., & Heide, F.</strong> on sensor fusion for autonomous
+                            vehicles.</a></li>
                 </ol>
             </div>
         </div>
@@ -135,7 +140,8 @@
             </button>
         </div>
 
-        <p><a href="https://ieeexplore.ieee.org/document/11205827" target="_blank">View more interdisciplinary needs here!</a></p>
+        <p><a href="https://ieeexplore.ieee.org/document/11205827" target="_blank">View more interdisciplinary needs
+                here!</a></p>
 
         <div id="team-modal" class="modal">
             <div class="modal-content">
@@ -149,7 +155,8 @@
 
         <div class="bio-card">
             <h3>Project Proposer: Daniel Yu</h3>
-            <p>I am a Computer Engineering major with experience in autonomous navigation systems and software development. I have some experience with ROS and machine learning.</p>
+            <p>I am a Computer Engineering major with experience in autonomous navigation systems and software
+                development. I have some experience with ROS and machine learning.</p>
         </div>
     </section>
 
@@ -167,8 +174,11 @@
             <p><a href="mailto:dyu12347@terpmail.umd.edu" class="contact-email">dyu12347@terpmail.umd.edu</a></p>
             <p>Join the GroupMe to meet others interested in this project and ask me questions!</p>
             <a href="https://groupme.com/join_group/113502108/jmnjfRra" target="_blank" class="btn">Join the GroupMe</a>
-            <p>Have any questions? Anything you want to discuss? Fill out the google form and I will get back to you as soon as possible!</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFdhlyAmvBlAXcaidnOUAuru0RBAtUD2aP8OMoDKaLqt939g/viewform?usp=sharing" id="contact-form"></iframe>
+            <p>Have any questions? Anything you want to discuss? Fill out the google form and I will get back to you as
+                soon as possible!</p>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdFdhlyAmvBlAXcaidnOUAuru0RBAtUD2aP8OMoDKaLqt939g/viewform?usp=sharing"
+                id="contact-form"></iframe>
         </div>
     </section>
 
@@ -178,4 +188,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
